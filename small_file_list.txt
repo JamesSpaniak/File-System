@@ -1,0 +1,1 @@
+25750440       16 -rw-r--r--    1 jamesspaniak     staff                16 Apr 28 11:14 .//.DS_Store

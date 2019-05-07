@@ -1,0 +1,3 @@
+26909036        8 -rw-r--r--    1 jamesspaniak     staff                 10 Apr 29 15:00 .//FNode.hpp
+26962221       16 -rw-r--r--    1 jamesspaniak     staff                10 Apr 29 16:40 .//output.txt
+26909038        8 -rw-r--r--    1 jamesspaniak     staff                 30 Apr 29 16:18 .//LDisk.hpp
