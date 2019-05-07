@@ -1,14 +1,30 @@
-# Team Assignment 2
+File System
+Author: James Spaniak
 
-### Explanation
+To run program:
+run make
 
-The goal of the assignment is to emulate a file system. The template provided follows the diagram in the description of the assignment heavily!
+then ./driver -f file_list.txt -d dir_list.txt -s 1600000 -b 16
 
-1) Tree.hpp represents the Hierarchical Tree G
-2) The tree is made of GNodes which represent directories/files, they have a parent and a list of children of GNodes.
-3) GNodes also have pointer to LFile which shows where the blocks of memory are stored in Disk.
-4) LFile.hpp represents the linked list container to show where the block adresses which make up the file are stored. The linked list itself is made up of FNodes which stores the block address of the memory. LFile also points to the LDisk so that it can add or shrink the disk space as needed.
-5) LDisk.hpp is the representation of disk memory, it is the container for the Disk linked list. The linked list itself is made of DNodes. DNodes have a start,end, and used bit so you can tell which addresses in memory are free.   
+Where the two files come from:
+find ./ -type d > dir_list.txt
+find ./ -type f -ls > file_list.txt
 
-### Disclamer
-For the most part this template should fit your needs. There might be some extra methods, for example LDisk.hpp has an update function which according to how you merge your nodes you might not need. Make sure you understand the structure and come up with an approach before you start.
+-s: disk size
+-b block size
+
+
+Then the following commands are available:
+
+• cd [directory] - set specified directory as the current directory
+• cd.. - set parent directory as current directory
+• ls - list all files and sub-directories in current directory
+• mkdir [name] - create a new directory in the current directory
+• create [name] - create a new file in the current directory
+• append [name] [bytes] - append a number of bytes to the file
+• remove [name] [bytes] - delete a number of bytes from the file
+• delete [name] - delete the file or directory
+• exit - deallocate data structures and exit program
+• dir - print out directory tree in breadth-first order
+• prfiles - print out all file information
+• prdisk - print out disk space information

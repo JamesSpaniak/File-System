@@ -8,7 +8,7 @@ SRC=$(wildcard *.cpp)
 OBJ=$(addprefix $(SRCPATH), $(SRC:.cpp=.o))
 
 RM=rm -f
-INCPATH=../includes
+INCPATH=includes
 CPPFLAGS= -I $(INCPATH) -std=c++11 -g
 
 
